@@ -1,0 +1,107 @@
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(49, 47, 45);
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+    border: #000000 1px solid;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 70px;
+  }
+  
+  .dropdown-content a {
+   color: rgb(0 0 0);
+    display: block;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    width: 300px;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgba(1, 1, 1, 0.068);
+    color: #2a2929;
+  }
+  .new-head {
+    background-color: rgba(251, 220, 63, 0.527);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; /* Adjust the height as needed */
+    }
+    
+    .new-head h1 {
+      text-align: center;
+      font-size:xx-large;
+    }
+ 
+.redirect {
+  margin-top: -18px;
+  display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      height: 10px;
+}
+.pdiv {
+  margin-top: -2px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #100f0f;
+  z-index: 1;
+}
+
+.new-head h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.new-head {
+  background-color: rgba(251, 251, 251, 0.705);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  left: 21%;
+  width: 50%;
+  border-radius: 35px;
+  color: rgb(95 66 15);
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.scroll-info a{
+    text-decoration:none;
+    bottom: 12%;
+    color: white;
+    
+    font-size: 30px;
+    left: 33%;
+}

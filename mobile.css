@@ -1,0 +1,43 @@
+@media screen and (max-width: 650px) {
+   .pdiv {
+        font-size: 4rem;
+        position: relative;
+        text-wrap: nowrap;
+        left: 3em;
+        color: white;
+    }
+    .dropdown {
+        left:5em;
+    }
+    .dropdown button {
+    height: 8em;
+    font-size: large;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+.scroll-info{
+    text-wrap:nowrap;
+    font-size:large;
+    font-weight:500;
+    left:5em;
+}
+
+.h2 {
+    line-height: 1.6;
+}
+    .sub-box p{
+        width: 25em;
+}
+    }
+@media screen and (min-width: 680px){
+    .scroll-info {
+    text-decoration: none;
+    bottom: -6em;
+    color: white;
+    position: absolute;
+    font-size: 1em;
+    left: 4em;
+    }
+}
+
