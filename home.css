@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100vh;
+    background-image: url("./images/construction1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header h1 {
+    padding: 3%;
+    color: white;
+    text-shadow: 5px 5px 20px black;
+    font-size: 4em;
+}
+
+.know-more {
+    margin: 8% 0% 0% 0%;
+}
+
+.know-more h2 {
+    margin: 0% 0% 2% 0%;
+    color: white;
+    font-size: 3em;
+    text-shadow: 3px 3px 20px black;
+}
+
+.know-more button {
+    margin: 0% 2%;
+    padding: 1%;
+    width: 22%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3em;
+    box-shadow: 1px 1px 20px black;
+}
+
+.scroll {
+    width: 100%;
+    color: white;
+    text-shadow: 5px 5px 20px black;
+    position: absolute;
+    bottom:3%;
+    font-size: 2.2em;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h1 {
+    margin: 1%;
+    font-size: 2.5em;
+}
+
+.luxury h3,
+.machinery h3 {
+    margin: 0% 2%;
+    font-size: 3em;
+}
+
+.luxury hr,
+.machinery hr {
+    margin: 0% auto 1%;
+    width: 35%;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(249, 177, 22);
+}
+
+.sub-box{
+    margin: 3%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-box img {
+    height: 400px;
+    width: 700px;
+    margin: 0% 2%;
+}
+
+.sub-box p{
+    padding: 3%;
+    font-size: 1.5em;
+}
+
+#info-p{
+    margin: 1% 0% 2% 0%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    bottom: 0%;
+}
