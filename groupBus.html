@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Booking For Bus</title>
+    <link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+
+    <div class="new-header">
+        <h2 class="head">Planning a Big Family Trip/Corporate Trips ?</h2>
+        <h2 class="shead">Book Full Bus Easily!</h2>
+    </div>
+    <div class="hero">
+        <img class="banner" src="images/banner_image.jpg" alt="">
+        <img class="sub-image" src="images/company_bus_05.png" alt="">
+        <img class="sub-image imag" src="images/company_bus_06.png" alt="">
+    </div>
+
+    <div class="container">
+        <form id="contact" onsubmit="sendEmail(); return false;">
+            <h3>Contact Us To Book Full Bus</h3>
+            <hr>
+            <h4>Our team will get in touch with you soon</h4>
+            <fieldset>
+                <input placeholder="Full Name" type="text" tabindex="1" required name="name" autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Email Address" type="email" tabindex="2" name="email" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Phone Number" type="tel" tabindex="3" name="phoneNumber" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Number of People" type="number" name="numPeople" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Enter Starting Location - Destination" type="text" name="location" tabindex="5" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your message/note here.... if any" tabindex="6" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+    //     function sendEmail() {
+    //         const name = document.querySelector('input[name="name"]').value;
+    //         const email = document.querySelector('input[name="email"]').value;
+    //         const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+    //         const numPeople = document.querySelector('input[name="numPeople"]').value;
+    //         const location = document.querySelector('input[name="location"]').value;
+    //         const message = document.querySelector('textarea').value;
+
+    //         const subject = "Group Booking Inquiry";
+    //         const body = `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nNumber of People: ${numPeople}\nLocation: ${location}\nMessage: ${message}`;
+
+    //         Email.send({
+    //             SecureToken: "402f7e35-eafd-49ce-b050-1c41c0caf5d3",
+    //             To: "okkasa.nst@gmail.com",
+    //             From: "no-reply@nstinfra.co.in",
+    //             Subject: subject,
+    //             Body: body
+    //         }).then(
+    //             message => {
+    //                 alert("Email sent successfully!");
+    //                 document.getElementById("contact").reset();
+    //             }
+    //         );
+    //     }
+     </script>
+    <script>
+        function sendEmail() {
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+            const numPeople = document.querySelector('input[name="numPeople"]').value;
+            const location = document.querySelector('input[name="location"]').value;
+            const message = document.querySelector('textarea').value;
+
+            const subject = "Group Booking Inquiry";
+            const body = `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nNumber of People: ${numPeople}\nLocation: ${location}\nMessage: ${message}`;
+
+            // Send email to admin
+            Email.send({
+                SecureToken: "402f7e35-eafd-49ce-b050-1c41c0caf5d3",
+                To: "okkasa.nst@gmail.com",
+                From: "no-reply@nstinfra.co.in",
+                Subject: subject,
+                Body: body
+            }).then(
+                message => {
+                    if (message === "OK") {
+                        // Send confirmation email to form filler
+                        Email.send({
+                            SecureToken: "402f7e35-eafd-49ce-b050-1c41c0caf5d3",
+                            To: email,
+                            From: "no-reply@nstinfra.co.in",
+                            Subject: "Group Booking Inquiry - Confirmation",
+                            Body: "Thank you for your inquiry. We will get in touch with you soon."
+                        }).then(
+                            confirmationMessage => {
+                                if (confirmationMessage === "OK") {
+                                    alert("Emails sent successfully!");
+                                    document.getElementById("contact").reset();
+                                } else {
+                                    alert("Error sending confirmation email to form filler.");
+                                }
+                            }
+                        );
+                    } else {
+                        alert("Error sending email to admin.");
+                    }
+                }
+            ).catch(
+                error => {
+                    console.error(error);
+                    alert("Error sending email. Please try again later.");
+                }
+            );
+        }
+    </script>
+</body>
+</html>

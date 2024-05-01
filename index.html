@@ -17,15 +17,15 @@
         AOS.init();
     </script>
     <div class="header">
-        <h1>New Shamim Transport And NST INFRA</h1>
+        <h1 class="title">New Shamim Transport And NST INFRA</h1>
         <div class="know-more">
             <h2>Click below to know more</h4>
                 <button id="bus-book">Book NST Bus</button>
                 <ul class="bus-list">
-                    <li><a href="">Private Seat Booking</a></li>
-                    <li><a href="">Book Full Bus for Group</a></li>
+                    <li><a href="./Book-Bus-Tickets-in-affordable-prices-in-Chattisgarh.php">Private Seat Booking</a></li>
+                    <li><a href="./groupBus.html">Book Full Bus for Group</a></li>
                 </ul>
-                <button>Rent Construction Equipment/Machinery</button>
+                <button onclick="openRent()">Rent Construction Equipment/Machinery</button>
         </div>
         <div class="scroll">
             <a href="#luxury">
@@ -35,13 +35,14 @@
         </div>
     </div>
     <div class="info">
-        <h1>Luxury Class Journey With Shamim...</h1>
-        <div class="luxury" id="luxury">
+        <h1 id="luxury">Luxury Class Journey With Shamim...</h1>
+        <div class="luxury" >
             <h3 data-aos="fade-right" data-aos-duration="2000">Luxury Class Bus Service</h3>
             <hr data-aos="fade-right" data-aos-duration="2000">
             <div class="sub-box">
                 <img src="./images/bus-interior3.jpg" alt="Bus" data-aos="zoom-out" data-aos-duration="2000">
-                <p data-aos="zoom-in" data-aos-duration="2000">Explore a new era of travel with NST Infra's Luxury Class Bus Service. Indulge in
+                <p data-aos="zoom-in" data-aos-duration="2000">Explore a new era of travel with NST Infra's Luxury Class
+                    Bus Service. Indulge in
                     opulence, seamless
                     booking, and punctual schedules, creating a memorable journey. Experience a blend of comfort and
                     efficiency as our courteous staff takes you on a luxurious ride. Redefine your travel expectations
@@ -54,7 +55,8 @@
             <hr data-aos="fade-left" data-aos-duration="2000">
             <div class="sub-box">
                 <img src="./images/construction-eq2.jpg" alt="Crane" data-aos="zoom-in" data-aos-duration="2000">
-                <p data-aos="zoom-out" data-aos-duration="2000">Discover excellence in construction equipment with NST Infra, featuring top names
+                <p data-aos="zoom-out" data-aos-duration="2000">Discover excellence in construction equipment with NST
+                    Infra, featuring top names
                     like JCB,
                     Excavators,
                     and Hydra Cranes. Our diverse range ensures efficiency and reliability, backed by transparent rental
@@ -67,6 +69,16 @@
     <div class="footer">
         <p>Copyright © 2023 New Shamim Transport | All Rights Reserved</p>
     </div>
+        <script type="text/javascript">
+            function openRent(){
+                window.location.href="./Rent-Equipments-In-Chattisgarh.php";
+            }
+
+        window.addEventListener("scroll", function () {
+            var title = document.querySelector(".header h1");
+            title.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 </body>
 
 </html>

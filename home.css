@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -16,15 +16,30 @@ html{
     text-align: center;
 }
 
-.header h1 {
+.title {
     padding: 3%;
     color: white;
     text-shadow: 5px 5px 20px black;
     font-size: 4em;
 }
 
+.sticky {
+    width: 100%;
+    padding: 1%;
+    color: black;
+    text-shadow: none;
+    position: fixed;
+    top: 0%;
+    font-size: 2.5em;
+    background-color: white;
+    box-shadow: 1px 1px 20px black;
+    z-index: 999;
+}
+
 .know-more {
-    margin: 8% 0% 0% 0%;
+    position: absolute;
+    width: 100%;
+    top: 40%;
 }
 
 .know-more h2 {
@@ -93,17 +108,17 @@ button#bus-book:hover+ul.bus-list {
     font-size: 2.2em;
 }
 
-.scroll a{
+.scroll a {
     color: white;
     text-decoration: none;
 }
 
-.scroll i{
+.scroll i {
     animation: blink 0.75s linear infinite;
 }
 
 @keyframes blink {
-    50%{
+    50% {
         opacity: 0;
     }
 }
@@ -113,8 +128,8 @@ button#bus-book:hover+ul.bus-list {
 }
 
 .info h1 {
-    margin: 1%;
-    font-size: 2.5em;
+    margin: 2%;
+    font-size: 3em;
 }
 
 .luxury h3,
