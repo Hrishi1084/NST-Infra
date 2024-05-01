@@ -7,30 +7,42 @@
     <title>Book Bus across Chattisgarh and Rent Construction Equipments/Machinery</title>
     <link rel="icon" href="./images/company_logo.png">
     <link rel="stylesheet" href="./home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c50d64cd93.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <div class="header">
         <h1>New Shamim Transport And NST INFRA</h1>
         <div class="know-more">
             <h2>Click below to know more</h4>
-                <button>Book NST Bus</button>
+                <button id="bus-book">Book NST Bus</button>
+                <ul class="bus-list">
+                    <li><a href="">Private Seat Booking</a></li>
+                    <li><a href="">Book Full Bus for Group</a></li>
+                </ul>
                 <button>Rent Construction Equipment/Machinery</button>
         </div>
         <div class="scroll">
-            <p>Click to Scroll Down for More</p>
-            <i class="fa-solid fa-angle-down"></i>
+            <a href="#luxury">
+                <p>Click to Scroll Down for More</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
         </div>
     </div>
     <div class="info">
         <h1>Luxury Class Journey With Shamim...</h1>
-        <div class="luxury">
-            <h3>Luxury Class Bus Service</h3>
-            <hr>
+        <div class="luxury" id="luxury">
+            <h3 data-aos="fade-right" data-aos-duration="2000">Luxury Class Bus Service</h3>
+            <hr data-aos="fade-right" data-aos-duration="2000">
             <div class="sub-box">
-                <img src="./images/bus-interior3.jpg" alt="Bus">
-                <p>Explore a new era of travel with NST Infra's Luxury Class Bus Service. Indulge in opulence, seamless
+                <img src="./images/bus-interior3.jpg" alt="Bus" data-aos="zoom-out" data-aos-duration="2000">
+                <p data-aos="zoom-in" data-aos-duration="2000">Explore a new era of travel with NST Infra's Luxury Class Bus Service. Indulge in
+                    opulence, seamless
                     booking, and punctual schedules, creating a memorable journey. Experience a blend of comfort and
                     efficiency as our courteous staff takes you on a luxurious ride. Redefine your travel expectations
                     with
@@ -38,17 +50,19 @@
             </div>
         </div>
         <div class="machinery">
-            <h3>Wide Range of Construction Machinery</h3>
-            <hr>
+            <h3 data-aos="fade-left" data-aos-duration="2000">Wide Range of Construction Machinery</h3>
+            <hr data-aos="fade-left" data-aos-duration="2000">
             <div class="sub-box">
-                <img src="./images/construction-eq2.jpg" alt="Crane">
-                <p>Discover excellence in construction equipment with NST Infra, featuring top names like JCB,
+                <img src="./images/construction-eq2.jpg" alt="Crane" data-aos="zoom-in" data-aos-duration="2000">
+                <p data-aos="zoom-out" data-aos-duration="2000">Discover excellence in construction equipment with NST Infra, featuring top names
+                    like JCB,
                     Excavators,
                     and Hydra Cranes. Our diverse range ensures efficiency and reliability, backed by transparent rental
                     terms and timely services. Choose NST Infra for all your construction machinery needs.</p>
             </div>
         </div>
-        <p id="info-p">At, NST Infra, We provide Bus Travel Services as well as rent Construction Equipments across Chattisgarh.</p>
+        <p id="info-p">At, NST Infra, We provide Bus Travel Services as well as rent Construction Equipments across
+            Chattisgarh.</p>
     </div>
     <div class="footer">
         <p>Copyright © 2023 New Shamim Transport | All Rights Reserved</p>
