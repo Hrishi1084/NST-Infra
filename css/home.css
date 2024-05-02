@@ -9,7 +9,7 @@ html {
 
 .header {
     height: 100vh;
-    background-image: url("./images/construction1.jpg");
+    background-image: url("../images/construction1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,4 +179,47 @@ button#bus-book:hover+ul.bus-list {
     color: white;
     position: fixed;
     bottom: 0%;
+}
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .know-more h2 {
+        font-size: 2em;
+    }
+
+    .know-more button {
+        width: 40%;
+    }
+
+    .scroll {
+        font-size: 1.7em;
+    }
+
+    .info h1 {
+        font-size: 2.5em;
+    }
+    
+    .luxury h3, .machinery h3 {
+        font-size: 2em;
+    }
+
+    .luxury hr, .machinery hr {
+        width: 50%;
+    }
+    
+    .sub-box {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub-box img {
+        width: 350px;
+        height: 200px;
+        position: relative;
+        float: left;
+    }
 }
