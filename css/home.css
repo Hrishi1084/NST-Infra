@@ -58,7 +58,6 @@ html {
     border-radius: 20px;
     font-size: 1.3em;
     box-shadow: 1px 1px 20px black;
-    transition: all 0.25 ease;
 }
 
 .know-more button:hover {
@@ -186,12 +185,22 @@ button#bus-book:hover+ul.bus-list {
         font-size: 2em;
     }
 
+    .sticky {
+        position: sticky;
+        font-size: 1.5em;
+    }
+
     .know-more h2 {
         font-size: 2em;
     }
 
     .know-more button {
         width: 40%;
+    }
+
+    .bus-list{
+        width: 55%;
+        left: 2%;
     }
 
     .scroll {
@@ -201,25 +210,39 @@ button#bus-book:hover+ul.bus-list {
     .info h1 {
         font-size: 2.5em;
     }
-    
-    .luxury h3, .machinery h3 {
+
+    .luxury h3,
+    .machinery h3 {
         font-size: 2em;
     }
 
-    .luxury hr, .machinery hr {
+    .luxury hr,
+    .machinery hr {
         width: 50%;
     }
-    
+
     .sub-box {
+        margin: 3% 0%;
         width: 100%;
         flex-direction: column;
         justify-content: center;
     }
 
     .sub-box img {
-        width: 350px;
-        height: 200px;
-        position: relative;
-        float: left;
+        margin: auto;
+        width: 80%;
+        height: 100%;
+    }
+
+    .sub-box p {
+        font-size: 1.2em;
+    }
+
+    #info-p {
+        padding: 1%;
+    }
+
+    .footer {
+        position: sticky;
     }
 }
