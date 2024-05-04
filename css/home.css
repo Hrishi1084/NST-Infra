@@ -186,6 +186,7 @@ button#bus-book:hover+ul.bus-list {
     }
 
     .sticky {
+        width: inherit;
         position: sticky;
         font-size: 1.5em;
     }
@@ -243,6 +244,7 @@ button#bus-book:hover+ul.bus-list {
     }
 
     .footer {
+        width: inherit;
         position: sticky;
     }
 }
