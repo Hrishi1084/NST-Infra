@@ -186,7 +186,7 @@ button#bus-book:hover+ul.bus-list {
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .title {
         font-size: 2em;
     }
