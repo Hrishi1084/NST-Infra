@@ -65,10 +65,16 @@ html {
     cursor: pointer;
 }
 
+.know-button{
+    display: flex;
+    justify-content: center;
+}
+
 .bus-list {
     width: 20%;
     position: absolute;
     left: 27%;
+    top: 100%;
     color: black;
     list-style: none;
     background-color: white;
@@ -103,7 +109,7 @@ button#bus-book:hover+ul.bus-list {
     color: white;
     text-shadow: 5px 5px 20px black;
     position: absolute;
-    bottom: 3%;
+    bottom: 5%;
     font-size: 2.2em;
 }
 
