@@ -14,7 +14,9 @@
 
 <body>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 2000
+        });
     </script>
     <div class="header">
         <h1 class="title">New Shamim Transport And NST INFRA</h1>
@@ -22,7 +24,8 @@
             <h2>Click below to know more</h4>
                 <button id="bus-book">Book NST Bus</button>
                 <ul class="bus-list">
-                    <li><a href="./Book-Bus-Tickets-in-affordable-prices-in-Chattisgarh.php">Private Seat Booking</a></li>
+                    <li><a href="./Book-Bus-Tickets-in-affordable-prices-in-Chattisgarh.php">Private Seat Booking</a>
+                    </li>
                     <li><a href="./groupBus.html">Book Full Bus for Group</a></li>
                 </ul>
                 <button onclick="openRent()">Rent Construction Equipment</button>
@@ -36,12 +39,12 @@
     </div>
     <div class="info">
         <h1 id="luxury">Luxury Class Journey With Shamim...</h1>
-        <div class="luxury" >
-            <h3 data-aos="fade-right" data-aos-duration="2000">Luxury Class Bus Service</h3>
-            <hr data-aos="fade-right" data-aos-duration="2000">
+        <div class="luxury">
+            <h3 data-aos="fade-right">Luxury Class Bus Service</h3>
+            <hr data-aos="fade-right">
             <div class="sub-box">
-                <img src="./images/bus-interior3.jpg" alt="Bus" data-aos="zoom-out" data-aos-duration="2000">
-                <p data-aos="zoom-in" data-aos-duration="2000">Explore a new era of travel with NST Infra's Luxury Class
+                <img src="./images/bus-interior3.jpg" alt="Bus" data-aos="zoom-out">
+                <p data-aos="zoom-in">Explore a new era of travel with NST Infra's Luxury Class
                     Bus Service. Indulge in
                     opulence, seamless
                     booking, and punctual schedules, creating a memorable journey. Experience a blend of comfort and
@@ -51,11 +54,11 @@
             </div>
         </div>
         <div class="machinery">
-            <h3 data-aos="fade-left" data-aos-duration="2000">Wide Range of Construction Machinery</h3>
-            <hr data-aos="fade-left" data-aos-duration="2000">
+            <h3 data-aos="fade-left">Wide Range of Construction Machinery</h3>
+            <hr data-aos="fade-left">
             <div class="sub-box">
-                <img src="./images/construction-eq2.jpg" alt="Crane" data-aos="zoom-in" data-aos-duration="2000">
-                <p data-aos="zoom-out" data-aos-duration="2000">Discover excellence in construction equipment with NST
+                <img src="./images/construction-eq2.jpg" alt="Crane" data-aos="zoom-in">
+                <p data-aos="zoom-out">Discover excellence in construction equipment with NST
                     Infra, featuring top names
                     like JCB,
                     Excavators,
@@ -69,10 +72,10 @@
     <div class="footer">
         <p>Copyright © 2023 New Shamim Transport | All Rights Reserved</p>
     </div>
-        <script type="text/javascript">
-            function openRent(){
-                window.location.href="./Rent-Equipments-In-Chattisgarh.php";
-            }
+    <script type="text/javascript">
+        function openRent() {
+            window.location.href = "./Rent-Equipments-In-Chattisgarh.php";
+        }
 
         window.addEventListener("scroll", function () {
             var title = document.querySelector(".header h1");

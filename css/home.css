@@ -180,6 +180,12 @@ button#bus-book:hover+ul.bus-list {
     bottom: 0%;
 }
 
+.luxury,
+.machinery,
+.sub-box {
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 425px) {
     .title {
         font-size: 2em;
@@ -199,7 +205,7 @@ button#bus-book:hover+ul.bus-list {
         width: 40%;
     }
 
-    .bus-list{
+    .bus-list {
         width: 55%;
         left: 2%;
     }
