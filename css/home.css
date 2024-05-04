@@ -184,6 +184,7 @@ button#bus-book:hover+ul.bus-list {
 .machinery,
 .sub-box {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @media screen and (max-width: 768px) {
